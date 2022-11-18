@@ -1,0 +1,35 @@
+<!doctype html>  
+<head> 
+    <meta charset="UTF-8" />
+    <title>Windows物件</title>
+    <script>
+        function ShowFormElements(){
+            let all = document.getElementsByTagName("*");
+            let tagname="目前文件內共有 " + all.length + " 個物件<br>";
+            for(i=0;i<all.length;i++){
+                tagname += all[i].tagName + "<br>";
+            }
+            showDive.innerHTML=tagname;
+        }
+    </script>
+</head>
+<body>
+
+    <div style="float:left;height:500px;width:200px;" id="showDive">
+    這是DIV</div>
+
+    <table border=1>
+        <tr>
+            <td align="center"><b>這是表格</b></td>
+        </tr>
+    </table>
+    <form>
+        <input type="text" size="20" value=" 我是文字方塊">
+        <br>
+        <img src="images/14.JPG" width="200" border="0">
+        <br>
+        <input type="button" name="myButton" value="顯示所有物件" onclick="ShowFormElements()">
+    </form>
+
+</body>
+</html>
