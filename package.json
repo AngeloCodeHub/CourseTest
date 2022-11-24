@@ -1,0 +1,22 @@
+{
+  "name": "coursetest",
+  "version": "1.0.0",
+  "description": "測試練習",
+  "main": "main.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AngeloCodeHub/CourseTest.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AngeloCodeHub/CourseTest/issues"
+  },
+  "homepage": "https://github.com/AngeloCodeHub/CourseTest#readme"
+}
