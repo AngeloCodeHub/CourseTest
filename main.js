@@ -1,10 +1,39 @@
+const Phaser = require("phaser");
+
+var MyGame = {};
+
+MyGame.Boot = function ()
+{
+    this.face = null;
+};
+
+MyGame.Boot.prototype.constructor = MyGame.Boot;
+
+MyGame.Boot.prototype = {
+
+    preload: function ()
+    {
+        this.load.image('face', 'assets/pics/bw-face.png');
+		this.lo
+    },
+
+    create: function ()
+    {
+        this.face = this.add.image(400, 300, 'face');
+    }
+
+};
+
+var config = {
+    type: Phaser.CANVAS,
+    parent: 'phaser-example',
+    width: 800,
+    height: 600,
+    scene: MyGame.Boot
+};
+
+var game = new Phaser.Game(config);
 
 
 
 
-console.log(0%3);
-console.log(1%3);
-console.log(2%3);
-console.log(3%3);
-console.log(4%3);
-console.log(5%3);

@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/AngeloCodeHub/CourseTest#readme",
   "dependencies": {
-    "phaser": "^3.60.0-beta.16",
+    "phaser": "^3.60.0-beta.17",
     "pixi.js": "^7.0.4"
   }
 }
