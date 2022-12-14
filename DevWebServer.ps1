@@ -10,8 +10,10 @@ for ($i = 5670; $i -lt 5674; $i++) {
 	}
 }
 $localAdd = "http://127.0.0.1:" + $Port
-$chromeBinDir = "D:\ProgramPortable\ChromePortable64\chrome.exe"
-$chromeuserDir = "--user-data-dir=D:\ChromeUser\kkkendy"
+# $chromeBinDir = "D:\ProgramPortable\ChromePortable64\chrome.exe"
+$chromeBinDir = "C:\ProgramPortable\ChromePortable64\chrome.exe"
+# $chromeuserDir = "--user-data-dir=D:\ChromeUser\kkkendy"
+$chromeuserDir = "--user-data-dir=C:\ChromeUserDatat"
 Start-Process -FilePath $chromeBinDir -ArgumentList $localAdd, $chromeuserDir
 
 # code .
@@ -19,5 +21,3 @@ Start-Process -FilePath $chromeBinDir -ArgumentList $localAdd, $chromeuserDir
 
 explorer.exe $pwd\assets
 http-server -s -p $Port
-
-
