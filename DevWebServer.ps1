@@ -1,26 +1,26 @@
-<# 
-開發啟動程式
-#>
+# TODO:
 
-# working directory
 Set-Location -Path $PSScriptRoot
 
-$location = "AsureWKS", "samin", "honray"
+$location = "AsureWKS", "SamingHome", "honray"
 
 $chromeBinDir 
 $chromeuserDir
 $chromeAt_Asure = "D:\ProgramPortable\ChromePortable64\chrome.exe", "--user-data-dir=D:\ChromeUser\kkkendy"
+$chromeAt_Home = "C:\ProgramPortable\ChromePortable64\chrome.exe", "--user-data-dir=C:\ChromeUserDatat"
 
-foreach ($currentItemName in $location) {
-	switch (HOSTNAME.EXE) {
-		$location[0] {
-			$chromeBinDir = $chromeAt_Asure[0]
-			$chromeuserDir = $chromeAt_Asure[1]
-		}
-		Default {}
+switch (HOSTNAME.EXE) {
+	$location[0] {
+		$chromeBinDir = $chromeAt_Asure[0]
+		$chromeuserDir = $chromeAt_Asure[1]
 	}
+	$location[1]{
+		$chromeBinDir = $chromeAt_Home[0]
+		$chromeuserDir = $chromeAt_Home[1]
+	}
+	Default {}
 }
-
+ 
 for ($i = 5670; $i -lt 5674; $i++) {
 	$result = Test-NetConnection "127.0.0.1" -Port $i
 	if ($result.TcpTestSucceeded -eq $false) {
